@@ -22,7 +22,7 @@ const nuevoModulo = 21 % 5 === 1;
 // En los próximos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
 // Asegúrate que usas "return" cuando la consola te lo pida.
-// Pista: "console.log()" NO fucionará.
+// const nuevaString )" NO fucionará.
 // No cambies los nombres de las funciones.
 
 function devolverString(str) {
@@ -162,8 +162,8 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  let num = 0.549;
-  return Math.round(num);
+  
+  return Math.round(0,0.314);
 }
 
 function esPositivo(numero) {
@@ -171,7 +171,14 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+ 
+  if(numero > 0){
+    return "el número es positivo";
+  }else if (numero < 0) {
+    return "el número es negativo";
+  }else{
+    return false;
+  }
 }
 
 function agregarSimboloExclamacion(str) {
