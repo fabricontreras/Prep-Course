@@ -40,7 +40,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  array[array.length] = elemento
+  array.push(elemento)
   return array
 }
 
@@ -50,7 +50,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  array[array.unshift(elemento)]
+  array.unshift(elemento)
   return array
 }
 
@@ -91,8 +91,12 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  return agregarNumeros(resultadosTest) / resultadosTest.length;
-  
+  // return agregarNumeros(resultadosTest) / resultadosTest.length;
+  let suma = 0;
+  for (let i = 0; i < resultadosTest.length; i++) {
+    suma = suma + resultadosTest[i];
+  }
+  return suma / resultadosTest.length
 }
 
 function numeroMasGrande(numeros) {
